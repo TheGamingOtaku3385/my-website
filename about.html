@@ -10,7 +10,7 @@
         <h1>The About Page</h1>
     </header>    
     <section>
-        <form method="post" action="https://webdevbasics.net/scripts/demo.php">
+        <form id="formuwu" method="post" action="https://webdevbasics.net/scripts/demo.php">
             <div>
                 <label for="MyName">Name:</label> 
                 <input type="text" name="MyName" id="MyName"> 
@@ -50,5 +50,14 @@
             <input type="reset">
         </form>
     </section>
+    <script>
+        document.getElementById("formuwu").onsubmit = (e)=>{
+            e.preventDefault()
+            const res = confirm("Do you are have stoopid");
+            if(res)
+                e.target.submit();
+        }
+    </script>
 </body>
+
 </html>
