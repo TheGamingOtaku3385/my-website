@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="/js/scripts.js"></script>
 </head>
 <body>
     <div class="container">
@@ -14,15 +15,15 @@
         <section>
             <form method="post" action="https://webdevbasics.net/scripts/demo.php">
                 <div class="mb-3">
-                    <label for="MyName" class="form-label">Name</label>
+                    <label for="MyName" class="form-label">Name:</label>
                     <input type="text" class="form-control" name="MyName" id="MyName" placeholder="Enter your name">
                 </div>
                 <div class="mb-3">
-                    <label for="MyEmail" class="form-label">Email address</label>
+                <label id="emailLabel" onmouseover="emailMessage()" onmouseout="blankMessage()" for="MyEmail" class="form-label">Email address:</label>
                 <input type="email" class="form-control" name="MyEmail" id="MyEmail" aria-describedby="emailHelp" placeholder="Enter your email">
                 <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                 </div>
-                    Choose Browsers you use
+                    Choose Browsers you use:
                         <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="Chrome" id="google" name="google">
                         <label class="form-check-label" for="google">
